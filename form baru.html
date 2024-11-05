@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Gaya untuk halaman */
+        body {
+            background: linear-gradient()
+        }
+        .form-container {
+            background-color: #8f6593; /* Warna latar belakang formulir */
+            border-radius: 10px; /* Sudut membulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+        }
+        .submit-button {
+            background-color: #5c196f; /* Hijau cerah */
+            color: rgb(6, 0, 0); /* Warna teks putih */
+        }
+        .submit-button:hover {
+            background-color: #000000; /* Hijau lebih gelap saat hover */
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen">
+    <div class="form-container p-8 w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center text-black-600">Buat Account Baru</h1>
+        <h2 class="text-xl font-semibold mb-4 text-center text-black-500">Sign Up Form</h2>
+        
+        <form action="welcome baru.html" method="get">
+            <div class="mb-4">
+                <label class="block text-gray-700">First name:</label>
+                <input type="text" class="border border-gray-400 p-2 w-full rounded" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Last name:</label>
+                <input type="text" class="border border-gray-400 p-2 w-full rounded" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Gender:</label>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" class="form-radio text-blue-500" value="male" required />
+                        <span class="ml-2">Male</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" class="form-radio text-blue-500" value="female" required />
+                        <span class="ml-2">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Nationality:</label>
+                <select class="border border-gray-400 p-2 w-full rounded" required>
+                    <option value="" disabled selected>Pilih Kewarganegaraan</option>
+                    <option>Indonesia</option>
+                    <option>Amerika</option>
+                    <option>Inggris</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Language Spoken:</label>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox text-blue-500" value="bahasa" />
+                        <span class="ml-2">Bahasa Indonesia</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox text-blue-500" value="english" />
+                        <span class="ml-2">English</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox text-blue-500" value="other" />
+                        <span class="ml-2">Other</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Bio:</label>
+                <textarea class="border border-gray-400 p-2 w-full h-24 rounded" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="submit-button text-center px-4 py-2 rounded w-full">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
